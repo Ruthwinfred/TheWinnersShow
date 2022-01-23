@@ -14,6 +14,7 @@
         <!-- Keywords -->
         <meta name="keyword" content="Html,css, JavaScript, Bootstrap">
   <link rel="stylesheet" type="text/css" href="Styles.css">
+  <link rel="stylesheet" type="text/css" href="Modal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -60,7 +61,7 @@
 <!--First section begin here -->
 <div class="row home-para" id="About">
   <div class="col-6">
-  <h1 id="hy" ><center>UNDERSTAND WHO WE ARE</center></h1><hr>
+  <h1 ><center>UNDERSTAND WHO WE ARE</center></h1><hr>
  <h id="hz">When you are there in the valley, no one to talk to and all seems to be working against your expectations, you need a voice to speak to you.
    Words that will bring you up, give you hope and tell you that all is not lost. For this reason, The Winnners Show was created. It is a platform where 
    you can listen to your favorite music, watch the movies that you like, read your best scripts and listen to the voices that will show you light in your
@@ -143,7 +144,7 @@
 </div>
 </div>
 </div>
-<hr><br><br>
+<hr><br><br><br><br>
 <!-- Portfolio Gallery Grid ends here-->
 
 
@@ -151,7 +152,7 @@
 
 <!-- MAIN (Center website) -->
 <div class="main" id="Service">
-  <center>WHAT WE OFFER</center>
+  <center><h1>WHAT WE OFFER</h1></center>
   <hr>
   <div id="myBtnContainer">
     <button class="btn1 active" onclick="filterSelection('all')">All</button>
@@ -360,73 +361,82 @@
 <!-- Contact us ends here -->
 
 
-<!-- Login starts here -->
-<div class="row" id="Login">
-        <div class="col-12">
-        <div class="container">  
-          <center>SIGN INTO WINNERS SHOW</center>
-          <hr>
-  <form id="contact" action="" method="post">
-    <h3>The Winners Show</h3>  
-    <h4>Client access</h4>
-    <fieldset>
-      <input placeholder="Username" type="text"  name="username" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Password" type="password" name="password" required>
-    </fieldset>
-    <fieldset>
-      <button type="submit" id="contact-submit" name="sub" value="Submit" >Let me in</button>
-      
-    </fieldset>
-  </form><br>
-  Not registered? Sign up <a href="#Register"><b>here</b></a>.
-</div>
-</div>
-</div>
-<!-- Login ends here -->
+<hr>
+<div class="row home-para" id="Login">
+  <div class="col-12">
+    <center><h1>ARE YOU A MEMBER OF WINNERS SHOW?</h1>
+    </center>
+  </div>
+</div><br><br><br><br><br>
 
-<!-- Register starts here -->
-<div class="row" id="Register">
-<div class="col-12">
-<div class="container">
-  <center>SIGN UP FOR WINNERS SHOW</center>
-<hr>  
-  <form id="contact" action="" method="post">
-    <h3>The Winners Show</h3>  
-    <h4>Client registration</h4>
-    <fieldset>
-      <input placeholder="First name" type="text"  name="fname" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Last name" type="text"  name="lname" required autofocus>
-    </fieldset>
-    <fieldset>
-      Gender:<input  type="radio"  name="Gender" value="Male" required autofocus>Male&nbsp;&nbsp;
-      <input  type="radio"  name="Gender" value="Female" required autofocus>Female&nbsp;&nbsp;
-      <input  type="radio"  name="Gender" value="Other" required autofocus>Other
-    </fieldset>
-    <fieldset>
-      <input placeholder="User name" type="text"  name="username" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Email" type="email" name="email" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Password" type="password" name="password" required>
-    </fieldset>
-    <fieldset>
-      Date of birth:<input type="date" name="dob" required>
-    </fieldset>
-     <fieldset>
-      <button type="submit" id="contact-submit" name="sub" value="Submit">Register</button>
-    </fieldset>
-  </form><br>
-  Already have an account? Login <a href="#Login"><b>here</b></a>.
-</div>   
+
+<!-- Login form form -->
+<div class="row home-para">
+  <div class="col-6">
+<button class="open-button" onclick="openForm()">Sign in</button>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <center><h3>The Winners Show</h3></center>  
+    <center><h4>Client access</h4></center>
+
+    <fieldset><input type="text" placeholder="Username" name="email" required></fieldset>
+    <fieldset><input type="password" placeholder="Password" name="psw" required></fieldset>
+
+    <button type="submit" class="btc">Let me in</button>
+    <button type="button" class="btc cancel" onclick="closeForm()">Close</button>
+  </form>
 </div>
 </div>
-<!-- Register ends here -->
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<!-- Login form -->
+
+
+<!-- Register form -->
+<div class="col-6">
+<button class="openup-button" onclick="openlaForm()">Register</button>
+
+<div class="formup-popup" id="laForm">
+  <form action="/action_page.php" class="form-container">
+    <center><h3>The Winners Show</h3></center> <br> 
+    <center><h4>Client registration</h4></center>
+
+    <input type="text" placeholder="First name" name="fname" required>
+    <input type="text" placeholder="Last name" name="lname" required>
+    Gender:<input  type="radio"  name="Gender" value="Male" required autofocus>Male&nbsp;&nbsp;
+    <input  type="radio"  name="Gender" value="Female" required autofocus>Female&nbsp;&nbsp;
+    <input  type="radio"  name="Gender" value="Other" required autofocus>Other
+    <input type="text" placeholder="User name" name="uname" required>
+    <input type="password" placeholder="Password" name="psw" required>
+    Date of birth:<input type="date" name="dob" required>
+    <button type="submit" class="btc">Register</button>
+    <button type="button" class="btc cancel" onclick="closelaForm()">Close</button>
+  </form>
+</div>
+</div>
+</div>
+
+
+<script>
+function openlaForm() {
+  document.getElementById("laForm").style.display = "block";
+}
+
+function closelaForm() {
+  document.getElementById("laForm").style.display = "none";
+}
+</script>
+<!-- Register form -->
+
+
 
   <!-- Footer starts here -->
   <footer>

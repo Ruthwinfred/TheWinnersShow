@@ -31,7 +31,6 @@ a{
 /* 1st section starts here */
 .section{
 background: url('img/mr.gif') center center no-repeat;
-    /* height: calc(100vh - 50px); */
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -97,7 +96,7 @@ footer{
 }
 #c{
   text-align: center;
-  background-color:rgba(39, 89, 4, 0.755) ;
+  background-color:rgb(0,106,78) ;
   width: 100%;
   color:white;
 }
@@ -123,7 +122,8 @@ footer{
   }
   
   .top-nav {
-    background-color:rgba(39, 89, 4, 0.755);
+    background-color: rgb(0,106,78);
+    background-color: rgb();
     font-size: 40px;
     word-break: break-all;
     text-align: center;
@@ -337,12 +337,12 @@ img {
   top: 70%;
   left: 12%;
   transform: translate(-50%, -50%);
-  color:rgba(39, 89, 4, 0.755);
+  color:rgb(0,106,78);
   font-size: 20px;
   font-weight: bolder;
 }
 .at:hover {
-  background-color:rgba(39, 89, 4, 0.755);
+  background-color:rgb(0,106,78);
   color: white;
 }
 
@@ -510,12 +510,12 @@ img {
 }
 
 .btn1:hover {
-  background-color:rgba(39, 89, 4, 0.755);
+  background-color:rgb(0,106,78);
   color: white;
 }
 
 .btn1.active {
-  background-color:rgba(39, 89, 4, 0.755);
+  background-color:rgb(0,106,78);
   color: white;
 }
 /* Service portfolio ends here */
@@ -675,7 +675,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: rgba(39, 89, 4, 0.755);
+  background: rgb(0,106,78);
   color: white;
   margin: 0 0 5px;
   padding: 10px;
@@ -683,7 +683,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background:rgba(39, 89, 4, 0.755);
+  background:rgb(0,106,78);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -772,7 +772,7 @@ p{
   cursor: pointer;
   width: 100%;
   border: none;
-  background: rgba(39, 89, 4, 0.755);
+  background: rgb(0,106,78);
   color: white;
   margin: 0 0 5px;
   padding: 10px;
@@ -780,7 +780,7 @@ p{
 }
 
 #cont button[type="submit"]:hover {
-  background:rgba(39, 89, 4, 0.755);
+  background:rgb(0,106,78);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
